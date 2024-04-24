@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 2422221688059712787}
   - component: {fileID: 6104908357084944712}
   - component: {fileID: 5516553089333152182}
-  - component: {fileID: -2922542185869540718}
-  - component: {fileID: -3257585946001147938}
   - component: {fileID: -4354948241133511805}
+  - component: {fileID: -5363335599010108005}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Bullet
@@ -31,11 +30,11 @@ Transform:
   m_GameObject: {fileID: 1404744944668581072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.165091, y: 0.939, z: 85.61}
-  m_LocalScale: {x: 0.17799, y: 0.17799, z: 0.17799}
+  m_LocalScale: {x: 0.35576642, y: 0.35576642, z: 0.35576642}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2422221688059712787
 MeshFilter:
@@ -108,35 +107,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-2922542185869540718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404744944668581072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49a63e12a5ce2a64dad83b660ce85717, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 3
---- !u!114 &-3257585946001147938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404744944668581072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14031c2d62c20ac4585f5c705c2dff00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawner: {fileID: 1876052633749173967, guid: 090ba7988719f044c893d469c1ee4d35,
-    type: 3}
-  bulletPrefab: {fileID: 1404744944668581072}
-  bulletSpeed: 10
 --- !u!54 &-4354948241133511805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,8 +129,33 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &-5363335599010108005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404744944668581072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf4bbbf82d014d4ca2c8b6dae564adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -4354948241133511805}
+  explosion: {fileID: 1000010823978654, guid: 3228a22491941734bb83ad691d17fcb9, type: 3}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 0
+  bounciness: 1
+  useGravity: 1
+  explosionDamage: 40
+  explosionRange: 3
+  explosionForce: 0
+  maxCollisions: 1
+  maxLifetime: 1
+  explodeOnTouch: 1
