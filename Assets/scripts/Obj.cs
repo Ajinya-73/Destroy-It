@@ -8,7 +8,7 @@ public class Obj : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown("0") && Panel != null)
+        if(Input.GetKeyDown("1") && Panel != null)
         {
 
             bool isActive = Panel.activeSelf;
