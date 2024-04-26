@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 389258123}
   - component: {fileID: 389258122}
   m_Layer: 5
-  m_Name: Message
+  m_Name: TM3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 633817778}
   - component: {fileID: 633817777}
   m_Layer: 5
-  m_Name: Objectives
+  m_Name: TM2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 1120038147}
   - component: {fileID: 1120038146}
   m_Layer: 5
-  m_Name: Title
+  m_Name: TM1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
