@@ -5617,6 +5617,7 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 605b3f4867069ba478edf250ec11de67, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 --- !u!1001 &3836929622783734709
 PrefabInstance:
@@ -5747,6 +5748,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f1235b1d0519554d91fc9712bc680c3, type: 3}
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1001 &4451454556024553373
 PrefabInstance:
