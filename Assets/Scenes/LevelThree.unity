@@ -747,9 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347718765}
-  - component: {fileID: 347718766}
   - component: {fileID: 347718767}
-  - component: {fileID: 347718768}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -773,22 +771,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &347718766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347718764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14031c2d62c20ac4585f5c705c2dff00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawner: {fileID: 0}
-  bulletPrefab: {fileID: 1404744944668581072, guid: bc71cb160ffe1ea42bda9053cf62d820,
-    type: 3}
-  bulletSpeed: 10
 --- !u!54 &347718767
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -816,22 +798,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &347718768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347718764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40c16887938813d4aab738c14800c8ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ARbulletSpawner: {fileID: 0}
-  ARbulletPrefab: {fileID: 3231380702036172139, guid: 09a8062a60094c7458487b808216951b,
-    type: 3}
-  ARbulletSpeed: 20
 --- !u!1001 &432905703
 PrefabInstance:
   m_ObjectHideFlags: 0
