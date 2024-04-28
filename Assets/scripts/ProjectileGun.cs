@@ -41,8 +41,8 @@ public class ProjectileGun : MonoBehaviour
     private void MyInput()
     {
         //Check Hold Button to shoot
-        if (allowBulletHold) shooting = Input.GetKey(KeyCode.Mouse0);
-        else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+        if (allowBulletHold) shooting = Input.GetKey(KeyCode.Space);
+        else shooting = Input.GetKeyDown(KeyCode.Space);
 
         if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
 
