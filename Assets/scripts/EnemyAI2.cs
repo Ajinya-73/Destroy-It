@@ -25,7 +25,7 @@ public class EnemyAI2 : MonoBehaviour
             UpdateDestination();
         }
     }
-
+    
     void UpdateDestination()
     {
         target = wayPoints[wayPointIndex].position;
