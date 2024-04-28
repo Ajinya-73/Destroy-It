@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI2 : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     NavMeshAgent agent;
     public Transform[] wayPoints;
@@ -34,7 +34,7 @@ public class EnemyAI2 : MonoBehaviour
 
     void IterateWayPointIndex()
     {
-        wayPointIndex++;
+        wayPointIndex = wayPointIndex + 1;
 
         if (wayPointIndex == wayPoints.Length)
         {
